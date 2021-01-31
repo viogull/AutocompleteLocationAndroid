@@ -219,7 +219,7 @@ class AutocompleteLocation @JvmOverloads constructor(
         val request = FindAutocompletePredictionsRequest.builder()
                 .setLocationBias(bounds)
                 .setCountry(country)
-                .setTypeFilter(TypeFilter.ADDRESS)
+                .setTypeFilter(TypeFilter.CITIES)
                 .setSessionToken(token)
                 .setQuery(constraint.toString())
                 .build()
